@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F7C277CD1F1F2CF800448E58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C277CC1F1F2CF800448E58 /* AppDelegate.swift */; };
-		F7C277CF1F1F2CF800448E58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C277CE1F1F2CF800448E58 /* ViewController.swift */; };
 		F7C277D21F1F2CF800448E58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7C277D01F1F2CF800448E58 /* Main.storyboard */; };
 		F7C277D51F1F2CF800448E58 /* DYZB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7C277D31F1F2CF800448E58 /* DYZB.xcdatamodeld */; };
 		F7C277D71F1F2CF800448E58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7C277D61F1F2CF800448E58 /* Assets.xcassets */; };
@@ -18,7 +17,6 @@
 /* Begin PBXFileReference section */
 		F7C277C91F1F2CF800448E58 /* DYZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7C277CC1F1F2CF800448E58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F7C277CE1F1F2CF800448E58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F7C277D11F1F2CF800448E58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F7C277D41F1F2CF800448E58 /* DYZB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DYZB.xcdatamodel; sourceTree = "<group>"; };
 		F7C277D61F1F2CF800448E58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -37,6 +35,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F7B7D9ED1F2092AC008C038D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F7B7D9F11F2092AC008C038D /* Main */,
+				F7B7D9EF1F2092AC008C038D /* Home */,
+				F7B7D9F01F2092AC008C038D /* Live */,
+				F7B7D9EE1F2092AC008C038D /* Follow */,
+				F7B7D9F21F2092AC008C038D /* Profile */,
+				F7B7D9F31F2092AC008C038D /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F7B7D9EE1F2092AC008C038D /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		F7B7D9EF1F2092AC008C038D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F7B7D9F01F2092AC008C038D /* Live */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		F7B7D9F11F2092AC008C038D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F7B7D9F21F2092AC008C038D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		F7B7D9F31F2092AC008C038D /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		F7C277C01F1F2CF800448E58 = {
 			isa = PBXGroup;
 			children = (
@@ -56,8 +109,8 @@
 		F7C277CB1F1F2CF800448E58 /* DYZB */ = {
 			isa = PBXGroup;
 			children = (
+				F7B7D9ED1F2092AC008C038D /* Classes */,
 				F7C277CC1F1F2CF800448E58 /* AppDelegate.swift */,
-				F7C277CE1F1F2CF800448E58 /* ViewController.swift */,
 				F7C277D01F1F2CF800448E58 /* Main.storyboard */,
 				F7C277D61F1F2CF800448E58 /* Assets.xcassets */,
 				F7C277D81F1F2CF800448E58 /* LaunchScreen.storyboard */,
@@ -141,7 +194,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7C277D51F1F2CF800448E58 /* DYZB.xcdatamodeld in Sources */,
-				F7C277CF1F1F2CF800448E58 /* ViewController.swift in Sources */,
 				F7C277CD1F1F2CF800448E58 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,8 +319,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 63MRD8XCUL;
 				INFOPLIST_FILE = DYZB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = long.m.DYZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -280,8 +334,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 63MRD8XCUL;
 				INFOPLIST_FILE = DYZB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = long.m.DYZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -308,6 +364,7 @@
 				F7C277E01F1F2CF800448E58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
